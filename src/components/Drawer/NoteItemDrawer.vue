@@ -1,12 +1,14 @@
 <template>
-    <div>
+    <router-link :to="value._id">
         {{ value.title }}
-    </div>
+    </router-link>
 </template>
 
 <script>
 export default {
   name: 'NoteItemDrawer',
-  props: ['value']
+  props: {
+    value: Object
+  }
 }
 </script>

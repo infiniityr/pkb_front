@@ -2,7 +2,7 @@
   <v-app>
     <drawer></drawer>
     <v-main>
-      <v-container fluid>
+      <v-container fluid class="pa-0 text-left">
         <router-view/>
       </v-container>
     </v-main>
@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import Drawer from './components/Drawer'
+import Drawer from './components/Drawer/Drawer'
 
 export default {
   components: {
